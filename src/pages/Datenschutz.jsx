@@ -1,0 +1,49 @@
+import React from 'react';
+
+export  function Datenschutzll() {
+    return <div>Datenschutz-Seite</div>;
+  }
+
+  // Datenschutz-Seite
+  export default function Datenschutz() {
+    return (
+      <div class="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 py-10 px-4">
+      <div class="container mx-auto px-4 py-8">
+          <h1 class="text-3xl font-bold mb-6 text-gray-200">Datenschutz</h1>
+  
+          <div class="bg-gray-300 p-6 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">1. Datenschutz auf einen Blick</h2>
+              <p class="mb-4"><strong>Allgemeine Hinweise</strong></p>
+              <p class="mb-4">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+  
+              <h2 class="text-xl font-semibold mt-6 mb-4">2. Allgemeine Hinweise und Pflichtinformationen</h2>
+              <p class="mb-4"><strong>Verantwortliche Stelle</strong></p>
+              <p class="mb-4">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+              <p class="mb-2">Max Mustermann</p>
+              <p class="mb-2">Musterstraße 123</p>
+              <p class="mb-2">12345 Musterstadt</p>
+              <p class="mb-4">Telefon: +49 123 456789</p>
+              <p class="mb-4">E-Mail: info@windschrank.de</p>
+  
+              <p class="mb-4"><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
+              <p class="mb-4">Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns.</p>
+  
+              <h2 class="text-xl font-semibold mt-6 mb-4">3. Datenerfassung auf unserer Website</h2>
+              <p class="mb-4"><strong>Cookies</strong></p>
+              <p class="mb-4">Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+  
+              <h2 class="text-xl font-semibold mt-6 mb-4">4. Analyse-Tools und Tools von Drittanbietern</h2>
+              <p class="mb-4"><strong>Google Analytics</strong></p>
+              <p class="mb-4">Diese Website nutzt Funktionen des Webanalysedienstes Google Analytics. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland.</p>
+  
+              <h2 class="text-xl font-semibold mt-6 mb-4">5. Plugins und Tools</h2>
+              <p class="mb-4"><strong>YouTube</strong></p>
+              <p class="mb-4">Unsere Website nutzt Plugins der von Google betriebenen Seite YouTube. Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA.</p>
+  
+              <h2 class="text-xl font-semibold mt-6 mb-4">6. SSL- bzw. TLS-Verschlüsselung</h2>
+              <p class="mb-4">Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung.</p>
+          </div>
+      </div>
+  </div>
+    );
+  }
