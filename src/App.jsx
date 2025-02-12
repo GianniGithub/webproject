@@ -1,17 +1,20 @@
 import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Impressum from './components/Impressum';
+import Home from './components/Home';
 
 const links = [
-  { title: 'Mein Shop', url: '#', color: 'bg-purple-500' },
-  { title: 'YouTube Kanal', url: '#', color: 'bg-red-500' },
-  { title: 'Instagram', url: '#', color: 'bg-pink-500' },
-  { title: 'TikTok', url: '#', color: 'bg-black' },
+  { title: 'Website', url: 'www.windschrank.de', color: 'bg-gray-500' },
+  { title: 'YouTube', url: 'https://www.youtube.com/@WindSchrank', color: 'bg-gray-500' },
+  { title: 'Instagram', url: 'https://www.instagram.com/windschrank/', color: 'bg-gray-500' },
+  { title: 'Patreon', url: 'https://www.patreon.com/Windschrank', color: 'bg-gray-500' },
 ]
 
 export default function App() {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-200 to-blue-200 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-950 py-10 px-4">
       <div className="max-w-md mx-auto">
         {/* Profile Section */}
         <div className="text-center mb-8">
@@ -20,8 +23,8 @@ export default function App() {
             alt="Profile" 
             className="rounded-full w-24 h-24 mx-auto mb-4 border-4 border-white shadow-lg"
           />
-          <h1 className="text-2xl font-bold text-gray-800 mb-2">@DeinUsername</h1>
-          <p className="text-gray-600">Willkommen auf meiner Link-in-Bio Seite! 👋</p>
+          <h1 className="text-2xl font-bold text-gray-100 mb-2">@windschrank</h1>
+          <p className="text-gray-100">Willkommen auf meiner Link-in-Bio Seite! 👋</p>
         </div>
 
         {/* Links */}
@@ -34,7 +37,7 @@ export default function App() {
               rel="noopener noreferrer"
               className={`${link.color} ${
                 hoveredIndex === index ? 'scale-105' : ''
-              } transition-transform duration-200 block rounded-lg text-white text-center p-4 shadow-lg hover:shadow-xl font-medium`}
+              } transition-transform duration-200 block rounded-lg text-white text-center p-4 shadow-lg hover:shadow-xl font-medium outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10` }
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -42,7 +45,7 @@ export default function App() {
             </a>
           ))}
         </div>
-
+          
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 mt-8">
           <a href="#" className="text-gray-600 hover:text-gray-800">
@@ -54,7 +57,10 @@ export default function App() {
         </div>
 
         {/* Footer */}
-        <p className="text-center text-gray-600 text-sm mt-8">
+        <a href="#" className="text-center text-gray-600 hover:text-gray-800 underline underline-offset-1">
+          Impressum
+          </a>
+        <p className="text-center text-gray-600 text-sm">
           © 2023 Dein Name. Alle Rechte vorbehalten.
         </p>
       </div>
