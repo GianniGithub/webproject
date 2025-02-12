@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Impressum from './components/Impressum';
-import Home from './components/Home';
+
 
 const links = [
   { title: 'Website', url: 'www.windschrank.de', color: 'bg-gray-500' },
@@ -45,7 +43,7 @@ export default function App() {
             </a>
           ))}
         </div>
-          
+
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 mt-8">
           <a href="#" className="text-gray-600 hover:text-gray-800">
@@ -57,12 +55,14 @@ export default function App() {
         </div>
 
         {/* Footer */}
-        <a href="#" className="text-center text-gray-600 hover:text-gray-800 underline underline-offset-1">
+        <div className="flex justify-center space-x-6 mt-8">
+          <a href="/impressum.html" className="text-center text-gray-600 hover:text-gray-800 underline underline-offset-1 text-sm">
           Impressum
           </a>
-        <p className="text-center text-gray-600 text-sm">
-          © 2023 Dein Name. Alle Rechte vorbehalten.
-        </p>
+          <a href="/datenschutz.html" className="text-center text-gray-600 hover:text-gray-800 underline underline-offset-1 text-sm">
+          Datenschutz
+          </a>
+        </div>
       </div>
     </div>
   )
